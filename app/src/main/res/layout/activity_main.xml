@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/select_picture"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/idRVImages"
+        android:background="@drawable/command_background"
+        android:drawableTop="@drawable/gallery"
+        android:drawablePadding="90dp"
+        android:drawingCacheQuality="auto"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="31dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffeeeeee" />
+
+    <Button
+        android:id="@+id/take_picture"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/command_background"
+        android:drawableTop="@drawable/camera"
+        android:drawablePadding="90dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="31dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffeeeeee" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idRVImages"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10pt"
+        android:background="@drawable/command_background"
+        android:drawableRight="@drawable/about"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffeeeeee" />
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Tesseract"
+        android:textColor="#0C0909"
+        android:textSize="15pt" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/company_name"
+        android:layout_centerInParent="true"
+        android:text="Automated Tool Tray"
+        android:gravity="center"
+        android:textColor="#0C0909"
+        android:textIsSelectable="false"
+        android:textSize="10pt"/>
+
+    <!--recycler view for displaying the list of images-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="117dp"
+        android:layout_height="93dp"
+        android:layout_below="@id/idRVImages"
+        android:layout_centerInParent="true"
+        android:src="@drawable/blue_wrench" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_name"
+        android:layout_above="@id/take_picture"/>
+</RelativeLayout>

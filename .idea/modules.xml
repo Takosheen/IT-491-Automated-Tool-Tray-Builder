@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IT491-Automated-Tool-Tray-Builder-ANTRACE.iml" filepath="$PROJECT_DIR$/.idea/modules/IT491-Automated-Tool-Tray-Builder-ANTRACE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/IT491-Automated-Tool-Tray-Builder-ANTRACE.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/IT491-Automated-Tool-Tray-Builder-ANTRACE.app.iml" />
+    </modules>
+  </component>
+</project>
