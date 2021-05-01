@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 29
     buildToolsVersion "30.0.3"
     //buildToolsVersion "25.0.3"
 
     defaultConfig {
         applicationId "com.jiangpeng.android.antrace"
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 29
 
         ndk {
             moduleName "antrace"
@@ -28,6 +28,12 @@ android {
             path 'src/main/jni/Android.mk'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     ndkVersion '21.1.6352462'
 
 }
@@ -40,7 +46,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.3.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

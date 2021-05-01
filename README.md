@@ -1,4 +1,4 @@
-antrace
++antrace
 =======
 
 This app is a port and front end of potrace(<http://potrace.sourceforge.net/>) on Android! It can transform a bitmap into a vector graphic.

@@ -30,7 +30,9 @@
         android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_njit"
-        android:label="Automated Tool Tray">
+        android:usesCleartextTraffic="true"
+        android:label="Automated Tool Tray"
+        tools:targetApi="m">
         <activity android:name=".ImageDetailActivity"></activity>
         <activity
             android:name="MainActivity"

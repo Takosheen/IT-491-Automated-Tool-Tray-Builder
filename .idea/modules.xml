@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IT491-Automated-Tool-Tray-Builder-ANTRACE.iml" filepath="$PROJECT_DIR$/.idea/modules/IT491-Automated-Tool-Tray-Builder-ANTRACE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/IT491-Automated-Tool-Tray-Builder-ANTRACE.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/IT491-Automated-Tool-Tray-Builder-ANTRACE.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CS-Project-Image-Capture.iml" filepath="$PROJECT_DIR$/.idea/modules/CS-Project-Image-Capture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CS-Project-Image-Capture.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CS-Project-Image-Capture.app.iml" />
     </modules>
   </component>
 </project>

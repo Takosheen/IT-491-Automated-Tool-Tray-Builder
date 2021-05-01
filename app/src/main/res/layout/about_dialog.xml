@@ -19,6 +19,10 @@
         <TextView android:id="@+id/textView11" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antrace_git" android:textSize="14sp"></TextView>
         <TextView android:clickable="true" android:paddingLeft="12dp" android:paddingRight="12dp" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:autoLink="web" android:text="@string/project_address" android:linksClickable="true" android:textSize="14sp"></TextView>
         <TextView android:id="@+id/textView12" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_outro" android:textSize="14sp"></TextView>
+        <TextView android:id="@+id/textView13" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="14sp"></TextView>
+        <TextView android:id="@+id/textView14" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KNOWN ISSUES:" android:textSize="14sp"></TextView>
+        <TextView android:id="@+id/textView15" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-Possible corruption issue on in-app camera for certain devices that use Android 11. " android:textSize="14sp" android:textColor="#F00"></TextView>
+
     </LinearLayout>
     </ScrollView>
 </LinearLayout>

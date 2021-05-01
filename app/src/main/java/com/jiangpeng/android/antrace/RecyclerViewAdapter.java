@@ -22,6 +22,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private final ArrayList<String> imagePathArrayList;
 
     // on below line we have created a constructor.
+    //
     public RecyclerViewAdapter(Context context, ArrayList<String> imagePathArrayList) {
         this.context = context;
         this.imagePathArrayList = imagePathArrayList;
@@ -48,6 +49,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             // if the file exists then we are displaying that file in our image view using picasso library.
             Picasso.get().load(imgFile).placeholder(R.drawable.ic_launcher_background).into(holder.imageIV);
 
+            String filename = imagePathArrayList.get(position);
+
+
             // on below line we are adding click listener to our item of recycler view.
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -57,7 +61,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     Intent i = new Intent(context, PreviewActivity.class);
 
                     // on below line we are passing the image path to our new activity.
-                    i.putExtra("imgPath", imagePathArrayList.get(position));
+                    i.putExtra(PreviewActivity.FILENAME, filename);
 
                     // at last we are starting our activity.
                     context.startActivity(i);
